@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 🎀</title>
+<style>
+/* 🌸 أنماط الخلفية والخطوط الأساسية 🌸 */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* خلفية متدرجة وردية هادئة (لتبرز زخرفة الدانتيل) */
+    background: linear-gradient(135deg, #FFFAFA, #F0F8FF, #FFF0F5); /* Snow, AliceBlue, LavenderBlush */
+    text-align: center; 
+    margin:0; 
+    padding:20px;
+    color: #333;
+}
+.screen { 
+    max-width:800px; 
+    margin:25px auto; 
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2); 
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+}
+h1, h2 {
+    color: #C2185B; /* وردي عميق للعناوين */
+    text-shadow: 1px 1px 4px #F8BBD0;
+}
+
+/* الأزرار الوردية الجذابة */
+button { 
+    padding:14px 30px; 
+    font-size:18px; 
+    cursor:pointer; 
+    background:#FF69B4; 
+    color:#fff; 
+    border:3px solid #E91E63; 
+    border-radius:30px;
+    margin:15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+button:hover {
+    background: #E91E63;
+    transform: translateY(-2px); /* تأثير ارتفاع بسيط */
+    box-shadow: 0 8px 15px rgba(233, 30, 99, 0.5);
+}
+
+.hidden { display:none; }
+
+/* ⚜️ زخرفة الدانتيل حول مربع الرسائل ⚜️ */
+.messageBox { 
+    background:#FFF0F5; /* لون وردي فاتح جداً جداً */
+    color:#333; 
+    padding:30px; 
+    border-radius:20px; 
+    margin-bottom:25px; 
+    text-align:left;
+    /* الحدود الدانتيلية */
+    border: 5px double #FFC0CB; /* خط مزدوج وردي ناعم */
+    box-shadow: 
+        0 0 0 8px #F8BBD0, /* خط ثانٍ أوسع */
+        0 0 0 10px #FFC0CB; /* خط ثالث رقيق */
+    transition: transform 0.3s;
+}
+.messageBox:hover {
+    transform: scale(1.01);
+}
+
+.messageBox pre {
+    white-space: pre-wrap; 
+    text-align: right;
+    direction: rtl; 
+    line-height: 1.8;
+    color: #4A148C; 
+    font-size: 16px;
+}
+
+/* شبكة الصور وتأطيرها */
+.imageGrid { 
+    display:flex; 
+    justify-content:space-around; 
+    flex-wrap:wrap; 
+    margin-bottom:25px; 
+}
+.imageGrid div { 
+    margin:15px; 
+    padding: 10px;
+    background-color: #FCE4EC; /* لون وردي فاتح جداً لخلفية كل صورة */
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.imageGrid img { 
+    width:160px; 
+    height:160px; 
+    object-fit:cover; 
+    border-radius:50%; /* جعل الصور دائرية لإطلالة كلاسيكية */
+    /* إطار الدانتيل/الفخامة للصور */
+    border: 6px solid #FFC0CB; 
+    box-shadow: 0 0 0 4px #F8BBD0;
+    transition: transform 0.4s;
+}
+.imageGrid img:hover {
+    transform: scale(1.08) rotate(2deg); /* تأثير دوران عند التمرير */
+}
+.imageGrid span {
+    color: #880E4F !important;
+    font-weight: 600;
+    display: block;
+    margin-top: 8px;
+}
+</style>
+</head>
+<body>
+
+<div id="startScreen" class="screen">
+<h1 style="font-size:60px; color:#C2185B;">HBD 🎉</h1>
+<button onclick="startApp()">Get Started</button>
+</div>
+
+<div id="gameScreen" class="screen hidden">
+<h2>A Little Fun Game For You Before We Get To The Point</h2>
+<div class="gameShapes">
+<button onclick="pickShape('star')">⭐</button>
+<button onclick="pickShape('heart')">❤️</button>
+<button onclick="pickShape('circle')">⭕</button>
+<button onclick="pickShape('square')">⬛</button>
+<button onclick="pickShape('rectangle')">▭</button>
+<button onclick="pickShape('triangle')">🔺</button>
+</div>
+</div>
+
+<div id="longMessage" class="screen hidden">
+<div class="messageBox">
+<pre>
+Hello, this is Lynn
+I hope you a lovely and nice birthday for today, Even though we just met, I still want you to have a wonderful birthday on your special day, I don’t know much about you, but all I know that you’re very special to me, even though we are stressed now but it’s totally fine with me, as long as it your birthday, I don’t care about anything else, I just want you to be happy.
+Maybe you don’t know, but you really made me smile and happy for a lot of times :>
+Maybe because you’re funny and cool? It’s true though:)
+I really like your personality, especially when you’re laughing or being lovely with me :) 
+Maybe you don’t know this either, but I really like your looks too, I never complimented you because you really don’t know how shy I am in real life, especially when I first saw you, you made me completely in love🥹!
+And don’t forget this, I will always believe in you for whatever you do, cuz I’m here for you baby.
+Your day today is very special to me, I wish that I could be in touch with you so I can do more:( 
+I hope this letter made you happy as me writing it! I am very happy for you but I’m too shy to send a text😚
+Amir, I never actually wondered about why your parents named you that, because you look just like your name, my lovely Amir! 
+And last but not least, I really love you, I will stay loyal to you no matter what happens 🤍
+This was in 2025/11/28 your birthday🤍
+Your lovely girlfriend: Lynn.
+</pre>
+</div>
+<button onclick="showImageGrid()">Next</button>
+</div>
+
+<div id="imageScreen" class="screen hidden">
+<div class="imageGrid">
+<div>
+<img src="https://i.postimg.cc/x8MRrC7c/IMG-3472.jpg" alt="Image1"><br>
+<span style="color:black;">us together</span>
+</div>
+<div>
+<img src="https://i.postimg.cc/7LNhRymS/IMG-3474.jpg" alt="Image2"><br>
+<span style="color:black;">us sleeping</span>
+</div>
+<div>
+<img src="https://i.postimg.cc/QdQdB3L5/IMG-3475.jpg" alt="Image3"><br>
+<span style="color:black;">us kissing</span>
+</div>
+<div>
+<img src="https://i.postimg.cc/BbPqJWcP/IMG-3476.jpg" alt="Image4"><br>
+<span style="color:black;">us playing</span>
+</div>
+</div>
+<button onclick="showShortMessage()">Next</button>
+</div>
+
+<div id="shortMessage" class="screen hidden">
+<div class="messageBox" style="padding:20px;">
+<pre>
+I tried my hardest to make it up to you, I really hope you enjoyed this experience! Remember to text me after 😛!
+</pre>
+<p style="text-align:center; font-style:italic;">hope you enjoyed</p>
+</div>
+<button onclick="saveMessage()">Save / Share</button>
+</div>
+
+<script>
+function startApp(){
+    document.getElementById('startScreen').classList.add('hidden');
+    document.getElementById('gameScreen').classList.remove('hidden');
+}
+
+let pickedShapes=[];
+function pickShape(shape){
+    pickedShapes.push(shape);
+    if(pickedShapes.includes('rectangle')&&pickedShapes.includes('circle')){
+        alert("Shapes flipped! 🔄");
+        pickedShapes=[];
+        return;
+    } 
+    if(pickedShapes.filter(s=>s==='circle').length===1 || pickedShapes.length >= 3){ 
+        document.getElementById('gameScreen').classList.add('hidden');
+        document.getElementById('longMessage').classList.remove('hidden');
+    }
+}
+function showImageGrid(){
+    document.getElementById('longMessage').classList.add('hidden');
+    document.getElementById('imageScreen').classList.remove('hidden');
+}
+function showShortMessage(){
+    document.getElementById('imageScreen').classList.add('hidden');
+    document.getElementById('shortMessage').classList.remove('hidden');
+}
+function saveMessage(){
+    const text=`I tried my hardest to make it up to you, I really hope you enjoyed this experience! Remember to text me after 😛!
+hope you enjoyed`;
+    const blob=new Blob([text],{type:'text/plain'});
+    const link=document.createElement('a');
+    link.download='birthday_message.txt';
+    link.href=window.URL.createObjectURL(blob);
+    link.click();
+}
+</script>
+
+</body>
+</html>
